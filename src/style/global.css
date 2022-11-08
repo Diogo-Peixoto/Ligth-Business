@@ -1,0 +1,48 @@
+body,div,ul,li,header,main,nav,div,section,figure,figcaption,img,input,button,form,label,p,a,select{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --backgroud-whitMode: #EFEFEF;
+    --white: #F7F6F5;
+    --color-font: white;
+    --color-font-black: black;
+    --grey-font: #979595;
+    --color-button: black;
+    --black-color:  black;
+
+}
+
+.dark-Mode:root{
+    --backgroud-whitMode: #707070;
+    --color-font-black: white;
+    --grey-font: black;
+    --black-color:  white;
+}
+
+textarea:focus, input:focus, select:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+body{
+    background-color: var(--backgroud-whitMode);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+@keyframes transitinGlobal{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

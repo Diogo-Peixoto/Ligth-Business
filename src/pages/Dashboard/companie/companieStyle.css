@@ -1,0 +1,99 @@
+main{
+    gap: 30px;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+}
+
+.box_companies{
+    display: flex;
+    flex-direction: column;
+    width: 61%;
+    min-width: 277px;
+    gap: 30px;
+    
+
+}
+
+.select_companies{
+    min-width: 277px;
+}
+
+.select_companies select{
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+
+}
+
+.select_companies select option{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.section_box div{
+    background-color: white;
+    width: 100%;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+}
+
+.section_box ul{
+    height: 212px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    overflow-x: scroll;
+    
+}
+
+
+
+.section_box ul::-webkit-scrollbar-track{
+	background-color: var(--white);
+
+}
+
+.section_box ul::-webkit-scrollbar{
+
+    height: 10px;
+	background-color: var(--white);
+    height: 8px;
+
+}
+
+.section_box ul::-webkit-scrollbar-thumb{
+
+	background-color: #000000;
+    border-radius: 8px;
+}
+
+
+.section_box li{
+    height: 100%;
+    width: 160px;
+    border-radius: 5px;
+    background: var(--color-button);
+    color: var(--color-font);
+    animation: transitinGlobal 0.5s;
+   
+}
+
+h4,h1{
+    color: var(--black-color);
+}
+
+
+.section_box li p,h5{
+    padding: 10px;
+}
+
+@media (max-width: 700px){
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

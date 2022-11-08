@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/favicon.png" type="image/x-icon">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!--Booadstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--Style-->
+    <link rel="stylesheet" href="../../../style/global.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../../../style/form.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="./departamentStyle.css">
+
+
+    <title>Ligth Business</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <figure>
+                <img src="../../../assets/logo.png" alt="Logo Ligth Business">
+            </figure>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="offcanvas offcanvas-end box-header" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="btn_close_modal">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul>
+                    <a href="../sector/index.html"><li>Setores</li></a>
+                    <a href="../companie/companie.html"><li>Empresas</li></a>
+                    <li id="active">Departamentos</li>
+                </ul>
+                
+                <div id="mode-btn" class="dark-mode">
+                    <div id="black">Black</div>
+                    <div id="white">White</div>
+                </div>
+                
+                <div id="btn_logout" class="btn_logout">
+                    <p>Sair</p>
+                    <figure>
+                        <img src="../../../assets/logout.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1>Departamentos</h1>
+    <main>
+        <div class="box_main-1">
+            <section class="section_form">
+                <h2>Criar Departamento</h2>
+                <form id="form_departament">
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" required >
+                    </div>
+                    <div>
+                        <label for="">Descrição</label>
+                        <input type="text" required >
+                    </div>
+                    <div>
+                        <label for="">Empresa</label>
+                        <select name="" id="departamentSelect-createDepartament" >
+                            <option value="">Selecionar Empresa</option>
+                        </select>
+                    </div>
+                
+                    <button>Criar</button>
+                </form>
+            </section>
+            <section class="select_departament">
+                <h2>Listar Departamentos</h2>
+                <div class="select_departament--boxSelection">
+                    <div>
+                        <select name="" id="departamentSelect-listDepartament" >
+                            <option value="">Selecionar Empresa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="" id="departamentSelect-selectDepartment">
+                            <option value="">Selecionar Departamento</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="select_departament--description">
+                    <h4>Descrição</h4>
+                    <h5 id="description_departament"></h5>
+                </div>
+                <div class="select_departament--employees">
+                    <h4>Funcionários</h4>
+                    <ul id="ul_Employees_Sector"> </ul>
+                </div>
+            </section>
+        </div>
+        
+        <section class="section_box">
+            <div class="section_form">
+                <h4>Modificar Funcionário</h4>
+                <form id="Edit_user">
+                    <div>
+                        <label for="">Selecionar Usuário</label>
+                        <select name="" id="list_AllUsers">
+                            <option value=" ">Usuário</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Senioridade</label>
+                        <select name="" id="">
+                            <option value="sênior">sênior</option>
+                            <option value="pleno">pleno</option>
+                            <option value="júnior">júnior</option>
+                            <option value="estágio">estágio</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Modalidade de trabalho</label>
+                        <input type="text">
+                    </div>
+                    <button>Editar</button>
+                </form>
+            </div>
+            <div class="section_form">
+                <h4>Contratar Usuario</h4>
+                <form id="hireUSer">
+                    <div>
+                        <label for="">Selecionar Usuário</label>
+                        <select name="" id="UserHire">
+                            <option value=" ">Usuário</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Selecionar Departamento</label>
+                        <select name="" id="DepartmentsHire">
+                            <option value=" ">Departamento</option>
+                        </select>
+                    </div>
+                    <button>Contratar</button>
+                </form>
+            </div>
+            <div class="section_form">
+                <h4>Demitir Funcionário</h4>
+                <form id="dismiss">
+                    <div>
+                        <label for="">Selecionar Departamento</label>
+                        <select name="" id="dismiss_departments">
+                            <option value=" ">Departamento</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Selecionar Funcionário</label>
+                        <select name="" id="dismiss_Employees">
+                            <option value=" ">Funcionário</option>
+                        </select>
+                    </div>
+                    <button>Demitir</button>
+                </form>
+            </div>
+        </section>
+        <section class="section_User_off">
+            <div class="select_departament--employees">
+                <h4>Usuários Sem Empregos</h4>
+                <ul id="Users_Without_Jobs"> </ul>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

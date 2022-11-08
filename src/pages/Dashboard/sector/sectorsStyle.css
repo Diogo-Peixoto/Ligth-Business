@@ -1,0 +1,37 @@
+h1{
+    color: var(--color-font-black);
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 350px;
+    transition: all 0.3s ease-out;
+    background-color: white;
+    color: black;
+    border-left: 3px solid black;
+    animation: transitinGlobal 0.5s;
+}
+
+.card figure{
+    width: 100%;
+    text-align: end;
+}
+
+.card figure img{
+    width: 90px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+   
+.card h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+   
+
+

@@ -1,0 +1,156 @@
+nav{
+    display: flex;
+    max-width: 90%;
+    margin: 40px auto;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+nav figure img{
+    height: 50px;
+    width:209px;
+}
+
+.box-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-header ul{
+    display: flex;
+    flex-grow: 1;
+    max-width: 400px;
+    font-weight: 500;
+    justify-content:space-between;
+    gap: 10px;
+
+}
+
+
+nav ul li{
+    cursor: pointer;
+    color: var(--color-font-black);
+}
+
+
+
+.dark-mode{
+    width: 100px;
+    display: flex;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#black{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding-block: 5px;
+}
+
+#white{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    padding-block: 5px; 
+}
+
+
+.btn_logout{
+    height: 50px;
+    width: 10vw;
+    border:1px solid black;
+    border-radius: 2px;
+    display: flex;
+    cursor: pointer;
+}
+
+.btn_logout p{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-font-black);
+
+}
+
+.btn_logout figure{
+    height: 100%;
+    width: 25%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_logout figure img{
+    filter: invert(100%);
+    height: 30px;
+    width: 30px;
+}
+
+.btn_close_modal{
+    display: none;
+}
+
+@media  (max-width: 767px){
+    .box-header{
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: start;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .btn_close_modal{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+    }
+
+    .box-header ul{
+        display: flex;
+        flex-direction: column;
+        max-height: 200px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .box-header ul li{
+        padding: 10px;
+    }
+
+    .btn_logout{
+        height: 50px;
+        width: 50%;
+        border:1px solid black;
+        border-radius: 2px;
+        display: flex;
+        cursor: pointer;
+    }
+        
+}
+
+
+@media  (max-width: 420px){
+    nav{
+        gap: 0px;
+    }
+
+    nav figure img{
+        width:150px;
+        height: auto;
+    }
+}

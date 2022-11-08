@@ -1,0 +1,30 @@
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+main figure{
+    width: 30%;
+    text-align: right;
+}
+
+main img{
+    width: 200px;
+}
+
+section p{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section p a{
+    color: #A39393;
+    margin-left: 5px;
+}

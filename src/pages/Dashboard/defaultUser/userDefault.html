@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/favicon.png" type="image/x-icon">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!--Booadstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--Style-->
+    <link rel="stylesheet" href="../../../style/global.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../../../style/form.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../companie/companieStyle.css">
+    <link rel="stylesheet" href="./userdefaultstyle.css">
+
+    <title>Ligth Business</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <figure>
+                <img src="../../../assets/logo.png" alt="Logo Ligth Business">
+            </figure>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="offcanvas offcanvas-end box-header" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="btn_close_modal">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                
+                <div id="mode-btn" class="dark-mode" class="dark-mode">
+                    <div id="black">Black</div>
+                    <div id="white">White</div>
+                </div>
+                <div id="btn_logout" class="btn_logout">
+                    <p>Sair</p>
+                    <figure>
+                        <img src="../../../assets/logout.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="section_form">
+            <h2>Editar Minhas Informações</h2>
+            <form id="form_EditInformation">
+                <div>
+                    <label for="">Nome</label>
+                    <input type="text" required >
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" required >
+                </div>
+                <div>
+                    <label for="">Senha</label>
+                    <input type="password" required >
+                </div>            
+                <button>Editar</button>
+            </form>
+        </section>
+
+        <div class="box_companies">
+            <section class="section_box">
+                <h3>Minha Empresa</h3>
+                <div class="infortions">
+                    <h4 id="companie"></h4>
+                    <p id="description_companie"></p>
+                </div>
+            </section>
+            <section class="section_box">
+                <h3>Meu Departamento</h3>
+                <div class="infortions">
+                    <h4 id="departmenName"></h4>
+                    <p id="description_departament"></p>
+                </div>
+            </section>
+
+            <section class="section_box">
+                <h3>Funcionarios do Departamento</h3>
+                <div>
+                    <ul id="ul_Employees_Companie"> </ul>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
